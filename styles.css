@@ -126,6 +126,31 @@ body {
   color: var(--blanco);
 }
 
+.btn-reserva {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: var(--amarillo);
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 6px 18px rgba(255, 215, 0, 0.4);
+}
+
+.btn-reserva i {
+  margin-left: 10px;
+}
+
+.btn-reserva:hover {
+  background-color: #e6c200;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 215, 0, 0.5);
+}
+
+
 /* SECCIONES */
 .section {
   padding: 100px 20px;
