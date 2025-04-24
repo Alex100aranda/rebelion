@@ -1,207 +1,249 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rebelión - Muay Thai & MMA</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudio de Muay Thai & MMA</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+  
+  <!-- Normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
- <!-- Header -->
-<header>
-    <div class="logo">
-        <a href="#">
-            <img src="img/rebelion.jpeg" alt="Rebelión Logo">
-            <span class="logo-text"></span>
-        </a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#about">Sobre Nosotros</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
-
-<!-- Banner Superior -->
-<section id="banner-top" data-aos="fade-in">
-    <div class="banner-overlay"></div>
-    <img src="img/banner.jpeg" alt="Banner Rebelión">
-</section>
-
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">MuayThai Studio</div>
   
- <!-- Hero Section -->
-<section id="hero" data-aos="fade-in">
-    <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
-      <h2>Entrenadores Profesionales de Muay Thai y MMA</h2>
-      <p>Aprende de los campeones. Clases personalizadas y seminarios para empresas y particulares.</p>
-      <button>Únete ahora</button>
-    </div>
-  </section>
+      <!-- Botón hamburguesa -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  
+      <!-- Menú de navegación -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#clases">Clases</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
 
-<!-- Sobre Nosotros -->
-<section id="about" data-aos="fade-up">
-    <h2>Sobre Nosotros</h2>
-    <p>Rebelión es un grupo de entrenadores profesionales con experiencia internacional...</p>
-    
-    <div class="trainers-carousel">
-      <div class="trainer" data-aos="fade-up" data-aos-delay="100">
-        <img src="img/equipo.jpg" alt="Kamikazze Orue">
-        <h3>Kamikazze Orue</h3>
-        <p>Campeón mundial de Muay Thai.</p>
-      </div>
-      
-      <div class="trainer" data-aos="fade-up" data-aos-delay="200">
-        <img src="img/equipo.jpg" alt="Arthur Rey Smith">
-        <h3>Arthur Rey Smith</h3>
-        <p>Especialista en MMA.</p>
-      </div>
-      
-      <div class="trainer" data-aos="fade-up" data-aos-delay="300">
-        <img src="img/equipo.jpg" alt="Maluma">
-        <h3>Maluma</h3>
-        <p>Experto en Boxeo.</p>
-      </div>
-      
-      <div class="trainer" data-aos="fade-up" data-aos-delay="400">
-        <img src="img/equipo.jpg" alt="Pablo Pavesi">
-        <h3>Pablo Pavesi</h3>
-        <p>Especialista en Kickboxing.</p>
-      </div>
+  <!-- Hero -->
+  <header class="hero" style="background-image: url('img/banner.jpeg');">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Entrena. Mejora. Lucha.</h1>
+      <p>Muay Thai, Boxeo & MMA en un solo lugar</p>
     </div>
-  </section>
+  </header>
 
 <!-- Servicios -->
-<section id="services" data-aos="fade-up">
-    <h2 class="section-title">Nuestros Servicios</h2>
-    <div class="services-container">
-  
-      <!-- Card 1 -->
-      <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
-        <img src="img/img1.jpeg" alt="Clases Grupales">
+<section id="servicios" class="section servicios-section">
+  <div class="container" data-aos="fade-right">
+    <h2>Servicios</h2>
+    <p class="subtexto">Entrena con nosotros y alcanza tu máximo nivel. Ofrecemos una experiencia completa para todos los niveles.</p>
+
+    <div class="servicios-grid">
+      <div class="servicio-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-dumbbell"></i>
+        <h3>Entrenamiento Personalizado</h3>
+        <p>Programas adaptados a tus metas físicas, con atención 1 a 1 de nuestros coaches.</p>
+      </div>
+
+      <div class="servicio-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-users"></i>
         <h3>Clases Grupales</h3>
-        <p>Entrenamientos intensivos en grupo con enfoque técnico, físico y mental.</p>
+        <p>Motivación, energía y técnica. Entrena con otros y mejora cada día.</p>
       </div>
-  
-      <!-- Card 2 -->
-      <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
-        <img src="img/img2.jpeg" alt="Clases Personalizadas">
-        <h3>Clases Personalizadas</h3>
-        <p>Entrenamiento uno a uno con nuestros profesionales. Tú ritmo, tu objetivo.</p>
+
+      <div class="servicio-card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-trophy"></i>
+        <h3>Preparación para Competencias</h3>
+        <p>Entrenamiento de alto nivel para peleadores amateur y profesionales.</p>
       </div>
-  
-      <!-- Card 3 -->
-      <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
-        <img src="img/img3.jpeg" alt="Seminarios">
-        <h3>Seminarios</h3>
-        <p>Eventos y capacitaciones para empresas, academias o grupos organizados.</p>
+
+      <div class="servicio-card" data-aos="fade-up" data-aos-delay="400">
+        <i class="fas fa-heartbeat"></i>
+        <h3>Mejora Física Integral</h3>
+        <p>Aumenta tu fuerza, resistencia, agilidad y bienestar general con nuestro enfoque completo.</p>
       </div>
-  
+    </div>
+  </div>
+</section>
+
+<!-- Clases y Horarios -->
+<section id="clases" class="section clases-section">
+  <div class="container" data-aos="fade-left">
+    <h2>Clases y Horarios</h2>
+    <p class="subtexto">Entrena como un profesional. Elige tu disciplina y encuentra el horario que mejor se adapta a ti.</p>
+
+    <!-- Tarjetas de clases -->
+    <div class="clases-grid">
+      <div class="clase-card">
+        <img src="img/muaitay.jpeg" alt="Muay Thai">
+        <h3>Muay Thai</h3>
+        <p>Golpea con técnica y poder. Ideal para principiantes y niveles avanzados.</p>
+      </div>
+
+      <div class="clase-card">
+        <img src="img/box.jpeg" alt="Boxeo">
+        <h3>Boxeo</h3>
+        <p>Desarrolla velocidad, precisión y cardio con nuestros entrenadores certificados.</p>
+      </div>
+
+      <div class="clase-card">
+        <img src="img/mma.jpeg" alt="MMA">
+        <h3>MMA</h3>
+        <p>Entrenamiento completo de artes marciales mixtas. Estrategia, técnica y combate.</p>
+      </div>
+    </div>
+
+    <!-- Tabla de horarios -->
+    <div class="horarios" data-aos="fade-up">
+      <h3>Horario Semanal</h3>
+      <table class="tabla-horarios">
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Muay Thai</th>
+            <th>Boxeo</th>
+            <th>MMA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>7:00 - 8:00 PM</td>
+            <td>6:00 - 7:00 PM</td>
+            <td>8:00 - 9:30 PM</td>
+          </tr>
+          <tr>
+            <td>Miércoles</td>
+            <td>7:00 - 8:00 PM</td>
+            <td>6:00 - 7:00 PM</td>
+            <td>8:00 - 9:30 PM</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>6:00 - 7:00 PM</td>
+            <td>5:00 - 6:00 PM</td>
+            <td>7:00 - 8:30 PM</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td colspan="3">Entrenamiento Libre y Sparring — 10:00 AM a 1:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- Galería -->
+<section id="galeria" class="section galeria-section">
+  <div class="container" data-aos="zoom-in">
+    <h2>Galería</h2>
+    <div class="galeria-grid">
+      <img src="img/img1.jpeg" alt="imagen1">
+      <img src="img/img2.jpeg" alt="">
+      <img src="img/img3.jpeg" alt="">
+      <img src="img/img4.jpeg" alt="">
+      <img src="img/img5.jpeg" alt="">
+      <img src="img/img6.jpeg" alt="">
+      <img src="img/img7.jpeg" alt="">
+      <img src="img/img8.jpeg" alt="">
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contacto -->
+  <section id="contacto" class="section">
+    <div class="container" data-aos="fade-up">
+      <h2>Contacto</h2>
+      <form>
+        <!-- Formulario básico de contacto -->
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo" required>
+        <textarea placeholder="Mensaje"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </div>
   </section>
-  
- <!-- Testimonios -->
-<section id="testimonials" data-aos="fade-up">
-    <h2>Lo que dicen nuestros estudiantes</h2>
-    <div class="testimonials-container">
-        <!-- Testimonio 1 -->
-        <div class="testimonial" data-aos="flip-left" data-aos-delay="100">
-            <p>"Los entrenamientos con Rebelión cambiaron mi enfoque del MMA y mejoraron mis habilidades a nivel profesional."</p>
-            <cite>- Juan Pérez</cite>
-        </div>
-        <!-- Testimonio 2 -->
-        <div class="testimonial" data-aos="flip-left" data-aos-delay="200">
-            <p>"Nunca imaginé que un entrenamiento de Muay Thai podría ser tan intenso y divertido a la vez. ¡Recomendadísimo!"</p>
-            <cite>- Ana García</cite>
-        </div>
-        <!-- Testimonio 3 -->
-        <div class="testimonial" data-aos="flip-left" data-aos-delay="300">
-            <p>"Gracias a Rebelión, ahora me siento más preparado que nunca para competir a nivel internacional. ¡Gracias por todo!"</p>
-            <cite>- Marco López</cite>
-        </div>
-        <!-- Testimonio 4 -->
-        <div class="testimonial" data-aos="flip-left" data-aos-delay="400">
-            <p>"Los seminarios de Rebelión son de otro nivel. Aprendí mucho más que en muchos gimnasios tradicionales."</p>
-            <cite>- Laura Martínez</cite>
-        </div>
-        <!-- Testimonio 5 -->
-        <div class="testimonial" data-aos="flip-left" data-aos-delay="500">
-            <p>"Los entrenadores son súper profesionales y la energía del grupo es impresionante. ¡Siento que voy a llegar lejos!"</p>
-            <cite>- Carlos Ramírez</cite>
-        </div>
+
+<!-- Mapa -->
+<section class="section mapa-section">
+  <div class="container">
+    <h2>¿Dónde estamos?</h2>
+    <div class="map-wrapper" data-aos="zoom-in">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15050.022192996228!2d-99.1469766150769!3d19.433758444852092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92d2e0e4dbd%3A0x905574a740c4893d!2sCentro%20Hist%C3%B3rico%20de%20la%20Cdad.%20de%20M%C3%A9xico%2C%20Centro%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1745458143342!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
+    <!-- Botón de Google Maps -->
+    <div class="map-button-wrapper" data-aos="fade-up">
+      <a href="https://www.google.com/maps/place/..." target="_blank" class="map-btn">
+        <i class="fas fa-map-marked-alt"></i> Abrir en Google Maps
+      </a>
+    </div>
+  </div>
 </section>
 
 
 
-<!-- Contacto -->
-<section id="contact" data-aos="fade-up">
-    <h2 class="section-title">Contacto</h2>
-    <p class="section-subtitle">¿Listo para entrenar con los mejores? Escríbenos y empieza tu revolución.</p>
-  
-    <form class="contact-form" data-aos="zoom-in" data-aos-delay="200">
-      <input type="text" placeholder="Tu Nombre" required>
-      <input type="email" placeholder="Tu Correo" required>
-      <textarea placeholder="Escribe tu mensaje" rows="5" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
- <!-- Botón Flotante de WhatsApp -->
-<a href="https://wa.me/521XXXXXXXXXX" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <!-- Botón WhatsApp flotante -->
+  <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="Chatea con nosotros por WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
   
-  <footer>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/tuusuario" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.facebook.com/tuusuario" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://twitter.com/tuusuario" target="_blank" aria-label="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-social" data-aos="fade-up">
+        <p>Síguenos en redes</p>
+        <div class="social-icons">
+          <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Muay Thai Studio. Todos los derechos reservados.</p>
+      </div>
     </div>
-    <p>© 2025 Rebelión | Entrenadores profesionales de combate</p>
   </footer>
+  
 
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // duración de la animación en milisegundos
-    once: true,     // se anima solo la primera vez que haces scroll
-  });
-</script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
 
-<!-- AOS (Animate On Scroll) JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-    AOS.init(); // Inicia las animaciones
-</script>
-
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true // para que solo se animen una vez
-  });
-</script>
-
-
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+  
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+  
 </body>
 </html>
